@@ -1,0 +1,80 @@
+@value USUALLY_DAY_BACKGROUND:      #645f5f;
+@value USUALLY_DAY_TEXT:            black;
+
+@value SELECTED_DAY_BACKGROUND:     black;
+@value SELECTED_DAY_TEXT:           white;
+
+@value WEEKEND_DAY_BACKGROUND:      #FF6530;
+@value WEEKEND_DAY_TEXT:            #FF6530;
+
+.DayTile, .SelectedTile, .WeekendTile{
+    min-width: 80px;
+    height: 85px;
+    border-width: 2px;
+    border-radius: 20px;
+    transition: all 0.2s;
+    border-style: double;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.Content{
+    display: flex;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+.Content header{
+    font-size: 16px;
+}
+.Content main{
+    font-size: 30px;
+}
+
+.DayTile{
+    border-color: USUALLY_DAY_BACKGROUND;
+}
+.DayTile header{
+    color: USUALLY_DAY_BACKGROUND;
+}
+.DayTile main{
+    color: USUALLY_DAY_TEXT;
+}
+
+.SelectedTile{
+    background-color: SELECTED_DAY_BACKGROUND;
+}
+.SelectedTile header{
+    color: SELECTED_DAY_TEXT;
+}
+.SelectedTile main{
+    color: SELECTED_DAY_TEXT;
+}
+
+.WeekendTile{
+    border-color: WEEKEND_DAY_BACKGROUND;
+}
+.WeekendTile header{
+    color: WEEKEND_DAY_TEXT;
+}
+.WeekendTile main{
+    color: WEEKEND_DAY_TEXT;
+}
+
+.DayTile:hover, .SelectedTile:hover, .WeekendTile:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+
+.TaskPoints{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}

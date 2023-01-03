@@ -1,0 +1,13 @@
+.CalendarTiles{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 200em;
+    height: 120px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
