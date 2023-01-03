@@ -1,9 +1,9 @@
 import React from "react";
 import s from '../style/TaskPoint.module.css'
-import {ITaksType} from "../../task/model/ITaksType";
+import {ITaskType} from "../model/ITaksType";
 
 interface TaskPointProps{
-    type:ITaksType
+    type:ITaskType
 }
 export function TaskPoint(props:TaskPointProps){
 

@@ -1,4 +1,4 @@
-import {ITaksType} from "../../task/model/ITaksType";
+import {ITaksType} from "../../task-point/model/ITaksType";
 
 export interface IDayTileValues{
     selectedDay:boolean;

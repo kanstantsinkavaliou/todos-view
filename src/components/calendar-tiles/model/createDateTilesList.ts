@@ -1,5 +1,5 @@
 import {IDayTileValues} from "../../day-tile/model/DayTileValues";
-import {ITaksType} from "../../task/model/ITaksType";
+import {ITaksType} from "../../task-point/model/ITaksType";
 
 export default function createDateTilesList (year:number, month:number){
 
