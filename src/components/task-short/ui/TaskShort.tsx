@@ -8,10 +8,28 @@ interface TaskShortProps{
 
 export function TaskShort(props:TaskShortProps){
 
+    const selectTask = () => {
+        console.log(props.taskShort.id)
+    }
+
     return(
-        <div className={s.TaskShort}>
-            <div>{props.taskShort.taskType + ":" +props.taskShort.doneStatus}</div>
-            <div>{props.taskShort.title}</div>
+        <div
+            className={s.TaskShort}
+            onClick={selectTask}
+        >
+            <div className={
+                props.taskShort.taskType === 'red' ?
+                    props.taskShort.doneStatus ?
+                        s.CircleRedChecked
+                        :
+                        s.CircleRed
+                    :
+                    props.taskShort.doneStatus ?
+                        s.CircleGreenChecked
+                        :
+                        s.CircleGreen
+            } />
+            <div className={s.TaskTitle}>{props.taskShort.title}</div>
         </div>
     );
 }

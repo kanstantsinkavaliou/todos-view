@@ -4,4 +4,46 @@
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
+    transition: all 0.2s;
+    height: 40px;
 }
+.TaskShort:hover{
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+.TaskShort:active{
+    opacity: .5;
+}
+
+.CircleRed,
+.CircleGreen,
+.CircleRedChecked,
+.CircleGreenChecked{
+    border-width: 0.15em;
+    border-style: solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.CircleRed{
+    border-color: red;
+}
+.CircleGreen{
+    border-color: green;
+}
+
+.CircleRedChecked{
+    border-color: red;
+    background: red;
+}
+.CircleGreenChecked{
+    border-color: green;
+    background: green;
+}
+
+.TaskTitle{
+    font-size: 18px;
+}
+

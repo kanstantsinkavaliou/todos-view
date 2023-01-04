@@ -1,5 +1,5 @@
 import {IDayTileValues} from "../../day-tile/model/DayTileValues";
-import {ITaksType} from "../../task-point/model/ITaksType";
+import {ITaskType} from "../../task-point/model/ITaksType";
 
 export default function createDateTilesList (year:number, month:number){
 
@@ -9,12 +9,12 @@ export default function createDateTilesList (year:number, month:number){
 
     for (let i:number = 1; i <= endDateOnThisMonth.getDate(); i++){
 
-        let tasksTypes:ITaksType[] = [];
+        let tasksTypes:ITaskType[] = [];
 
         const count:number = getRandomInt(3);
         if(count !== 0){
             for (let i:number = 0; i < count; i++){
-                let taskType:ITaksType = {type:"green"};
+                let taskType:ITaskType = {type:"green"};
                 if (getRandomInt(2) === 0 )
                     taskType.type = "red";
                 tasksTypes.push(taskType);
