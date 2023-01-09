@@ -5,8 +5,11 @@ export function TasskerIcons(){
 
     return(
         <div className={s.TasskerIcons}>
-            <img src='/svg/ui-11.svg'/>
-            <a href="#" className={s.MenuBtn}>
+            <img src='/svg/ui-11.svg' alt="bell.icon"/>
+            <a
+                href="#"
+                className={s.MenuBtn}
+            >
                 <span></span>
             </a>
         </div>

@@ -17,8 +17,12 @@ export function DayTile(props:DayTileProps){
 
     const currentDate = new Date(props.value.value)
 
+    const selectTile = () => {
+        alert(currentDate)
+    }
+
         return(
-            <div>
+            <div onClick={selectTile}>
                 <div
                     className={
                         props.value.selectedDay ?

@@ -4,12 +4,15 @@ import s from '../style/TaskShort.module.css'
 
 interface TaskShortProps{
     taskShort:ITaskShort;
+    setActive:any;
+    setTaskId:any;
 }
 
 export function TaskShort(props:TaskShortProps){
 
     const selectTask = () => {
-        console.log(props.taskShort.id)
+        props.setTaskId(props.taskShort.id)
+        props.setActive(true);
     }
 
     return(

@@ -1,0 +1,16 @@
+.Task{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+    margin: 0px 20% 0px 20%;
+}
+
+.Element{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
