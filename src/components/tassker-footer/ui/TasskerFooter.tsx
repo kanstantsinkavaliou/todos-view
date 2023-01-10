@@ -18,7 +18,6 @@ export function TasskerFooter(props:TasskerFooterProps){
             <button
                 className={s.AddTaskBtn}
                 onClick={buttonHandler}
-                role="button"
             >
                 Add a new task
             </button>

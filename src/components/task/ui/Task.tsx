@@ -27,7 +27,7 @@ export function Task(props:TaskProps){
                 doneStatus:false,
                 taskType:"red"
             })
-    }, [])
+    }, [props.taskId])
 
     return(
         <div className={s.Task}>

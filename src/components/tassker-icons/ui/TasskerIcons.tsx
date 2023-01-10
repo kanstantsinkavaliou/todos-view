@@ -7,7 +7,7 @@ export function TasskerIcons(){
         <div className={s.TasskerIcons}>
             <img src='/svg/ui-11.svg' alt="bell.icon"/>
             <a
-                href="#"
+                href="/"
                 className={s.MenuBtn}
             >
                 <span></span>
