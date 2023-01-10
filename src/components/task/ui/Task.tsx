@@ -27,6 +27,14 @@ export function Task(props:TaskProps){
                 doneStatus:false,
                 taskType:"red"
             })
+        else setTask({
+            date:new Date(),
+            time:"",
+            title: "",
+            description:"",
+            doneStatus:false,
+            taskType:""
+        })
     }, [props.taskId])
 
     return(
